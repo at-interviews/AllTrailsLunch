@@ -6,6 +6,11 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		C0D678142CA1B59700DDFBAB /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = C0D678132CA1B59700DDFBAB /* Kingfisher */; };
+		C0F22D7C2CA239C700794C44 /* GooglePlacesSwift in Frameworks */ = {isa = PBXBuildFile; productRef = C0F22D7B2CA239C700794C44 /* GooglePlacesSwift */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		C0DDA8842CA08CE10013602B /* AllTrails at Lunch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AllTrails at Lunch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -36,6 +41,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C0D678142CA1B59700DDFBAB /* Kingfisher in Frameworks */,
+				C0F22D7C2CA239C700794C44 /* GooglePlacesSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +85,8 @@
 			);
 			name = "AllTrails at Lunch";
 			packageProductDependencies = (
+				C0D678132CA1B59700DDFBAB /* Kingfisher */,
+				C0F22D7B2CA239C700794C44 /* GooglePlacesSwift */,
 			);
 			productName = "AllTrails at Lunch";
 			productReference = C0DDA8842CA08CE10013602B /* AllTrails at Lunch.app */;
@@ -107,6 +116,10 @@
 			);
 			mainGroup = C0DDA87B2CA08CE10013602B;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				C0D678122CA1B59700DDFBAB /* XCRemoteSwiftPackageReference "Kingfisher" */,
+				C0F22D7A2CA239C700794C44 /* XCRemoteSwiftPackageReference "ios-places-swift-sdk" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = C0DDA8852CA08CE10013602B /* Products */;
 			projectDirPath = "";
@@ -148,9 +161,10 @@
 				DEVELOPMENT_TEAM = R4AX8KY55Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AllTrails at Lunch/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AllTrails at Lunch";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -160,9 +174,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "lang.josh.AllTrails-at-Lunch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -176,9 +194,10 @@
 				DEVELOPMENT_TEAM = R4AX8KY55Q;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = "AllTrails at Lunch/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AllTrails at Lunch";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UIStatusBarHidden = NO;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -188,9 +207,13 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = "lang.josh.AllTrails-at-Lunch";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -335,6 +358,38 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		C0D678122CA1B59700DDFBAB /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 8.0.3;
+			};
+		};
+		C0F22D7A2CA239C700794C44 /* XCRemoteSwiftPackageReference "ios-places-swift-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/googlemaps/ios-places-swift-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		C0D678132CA1B59700DDFBAB /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0D678122CA1B59700DDFBAB /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		C0F22D7B2CA239C700794C44 /* GooglePlacesSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = C0F22D7A2CA239C700794C44 /* XCRemoteSwiftPackageReference "ios-places-swift-sdk" */;
+			productName = GooglePlacesSwift;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = C0DDA87C2CA08CE10013602B /* Project object */;
 }
